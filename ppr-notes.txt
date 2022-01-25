@@ -1,0 +1,18 @@
+# other tools had already been "neutered" (de-dongled)
+# PPR still needed the operation
+
+# NOTE: this work is in compliance with the dmca exemption #10,
+# "computer programs - software preservation".
+# see: https://www.federalregister.gov/documents/2021/10/28/2021-23311/exemption-to-prohibition-on-circumvention-of-copyright-protection-systems-for-access-control
+
+# XACT/MATHCP/PPR (XACT/PPR is just driver)
+phar386 does stupid packing, let it unpack itself (see reko)
+build dosbox with debug
+find a breakpoint or stop after load but before crash, dump 4m
+bp f:2e8e28
+dump memdumpbin f:0 400000
+now analyze with ghidra (borland 32)
+check 2fcf9a8 (caller) and 2fcf3c (lic)
+patch w/okteta by finding unique pos
+search for feffff893d48e11700 (
+nop (90) out following 17 bytes (start with ff75, end with 1700)
