@@ -38,6 +38,7 @@ wget_file "https://www.ee.nthu.edu.tw/jcliao/Lab2000/lab03/xabel.pdf"
 # lots of other databooks from older (1986!) and newer
 # this one is nice because it has XC2000,XC3000,XC3100, and XC4000 (and L)
 wget_file "http://www.bitsavers.org/components/xilinx/_dataBooks/1993_Xilinx_Programmable_Logic_Data_Book.pdf"
+wget_file "http://www.bitsavers.org/components/xilinx/_dataBooks/1989_Xilinx_Programmable_Gate_Array_Data_Book.pdf"
 
 # used to debug/service phar-lap 386/dos extender apps in XACT 5.x
 #wget_file "https://vetusware.com/output/vpddqgof/Phar%20Lap%20386%20dos-extender%204.1.7z"
